@@ -1,0 +1,2 @@
+rm employee.*
+rm *tudent*.*
