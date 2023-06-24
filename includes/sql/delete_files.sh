@@ -1,4 +1,4 @@
-for filename in output/build/bin/_select_*.*
+for filename in build/bin/_select_*.*
 do
     if [ -f "$filename" ]
     then
