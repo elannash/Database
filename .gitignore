@@ -2,6 +2,7 @@
 employee*.*
 student*.*
 clean.sh
+delete_files.sh
 
 *~
 *.autosave
