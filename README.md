@@ -47,7 +47,7 @@ To create the "Student Table" with specific fields, use the following command: `
 Example: ``create table "Student Table" fields "First Name", "Last Name", Age, Major``
 
 ### Data Insertion
-To insert data into a table, use the following commands. (Note: if a trailing value is not provided, ``NOVALUE`` will be inserted in its place): ``insert into <tablename> values <value1>, <value2, ...``\
+To insert data into a table, use the following commands. (Note: if a trailing value is not provided, ``NOVALUE`` will be inserted in its place): ``insert into <tablename> values <value1>, <value2>, ...``\
 Example: ``insert into "Student Table" values Devon, Vega, 23, "Biology"``
 
 ### Data Selection
