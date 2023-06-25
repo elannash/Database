@@ -12,7 +12,7 @@ BIN_DIR := build/bin
 # HEADERS := $(wildcard $(SRC_DIR)/**/*.h)
 # HEADER_DIRS := $(dir $(HEADERS))
 # HEADERINCL := $(addprefix -I, $(HEADER_DIRS))
-HEADERINCL := -Isrc
+# HEADERINCL := -Iincludes
 
 SRCS := $(wildcard $(SRC_DIR)/**/*.cpp)
 OBJS := $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SRCS))
@@ -31,10 +31,10 @@ $(EXEC): $(BUILD_DIR)/main.o $(OBJS)
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
 $(BUILD_DIR)/main.o: main.cpp build
-	$(CXX) $(CXXFLAGS) $(HEADERINCL) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp build
-	$(CXX) $(CXXFLAGS) $(HEADERINCL) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # tests: $(TESTS_EXEC)
 
