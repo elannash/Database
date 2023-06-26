@@ -29,7 +29,7 @@ This project implements lower-level data structures and libraries, as well as hi
 - Add support for determining current file path dynamically at runtime (currently executable must be run from project's root folder or file path issues will occur).
 
 ## Building
-This project builds nearly all data structures from scratch and does not depend on any external libraries. It can be compiled on most compilers that support the C++11 standard. Alternatively, a .zip file containing all source files and the executable is available under **releases**.
+This project builds nearly all data structures from scratch and does not depend on any external libraries. It can be compiled on most compilers that support the C++11 standard. If on Windows, build using CMake. Alternatively, a .zip file containing all source files and the executable is available under **releases**.
 
 ### Using ``Make``
 - Run ``make`` using the provided Makefile in the project's root folder
