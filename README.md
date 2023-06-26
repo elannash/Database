@@ -3,24 +3,21 @@
 
 This project implements lower-level data structures and libraries, as well as high-level classes, to create a basic relational database management system. At its highest level, it consists of three main classes:
 
-* SQL
+* **[SQL](https://github.com/elannash/relational-database/blob/main/includes/sql/sql.h)**
      - Takes SQL-esque user commands and manages a database of tables written into storage.
      - Interacts with the Parser class to determine the type of command being executed by the user.
      - Interacts with the Table class to perform select commands.
      - Has the capability to process a batch file in .txt format and execute the commands contained within it.
 
-* Parser
+* **[Parser](https://github.com/elannash/relational-database/blob/main/includes/parser/parser.h)**
      - Tokenizes string input from the user and creates a parse tree based on the query.
      - Utilizes a graph in the form of an adjacency matrix to verify queries.
 
-* Table
+* **[Table](https://github.com/elannash/relational-database/blob/main/includes/table/table.h)**
      - Manages a single table, but has functions to open other tables and select data values adhering to certain conditions.
      - Utilizes B+ Trees to index data.
      - Stores data in binary files.
      - Uses the Shunting Yard algorithm to convert infix conditions to postfix and evaluate.
-
-### Known Issues:
-- Missing closing quotes: The system currently lacks updated exception handling for missing closing quotes.
 
 ### TODO:
 - Add support for assorted types (e.g. integer types, double types, etc)
