@@ -15,7 +15,7 @@ This project implements lower-level data structures and libraries, as well as hi
 
 * **[Table](https://github.com/elannash/relational-database/blob/main/includes/table/table.h)**
      - Manages a single table, but has functions to open other tables and select data values adhering to certain conditions.
-     - Utilizes B+ Trees to index data.
+     - Utilizes [B+ Trees](https://github.com/elannash/relational-database/blob/main/includes/bplustree/bplustree.h) to index data.
      - Stores data in binary files.
      - Uses the Shunting Yard algorithm to convert infix conditions to postfix and evaluate.
 
