@@ -1,7 +1,7 @@
 # Relational Database From Scratch
 ## Project Overview
 
-This project implements lower-level data structures and libraries, as well as high-level classes, to create a relational database management system. At its highest level, it consists of three main classes:
+This project implements lower-level data structures and libraries, as well as high-level classes, to create a basic relational database management system. At its highest level, it consists of three main classes:
 
 * SQL
      - Takes SQL-esque user commands and manages a database of tables written into storage.
