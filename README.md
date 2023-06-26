@@ -48,7 +48,7 @@ Example: ``create table "Student Table" fields "First Name", "Last Name", Age, M
 
 ### Data Insertion
 To insert data into a table, use the following commands. (Note: if a trailing value is not provided, ``NOVALUE`` will be inserted in its place): ``insert into <tablename> values <value1>, <value2>, ...``\
-Example: ``insert into "Student Table" values Devon, Vega, 23, "Biology"``
+Example: ``insert into "Student Table" values Devon, Vega, 23, Biology``
 
 ### Data Selection
 Retrieve all rows from the table: ``select * from <tablename>``\
@@ -61,7 +61,7 @@ Select rows using <, >, <=, >= operators. **(Note comparisons are currently lexi
 Example: ``select * from Employees where Name < Michael``
 
 Select specific fields: ``select <field1>, <field2>, ... from <tablename>``\
-Example: ``select "First Name", Major from Students"``
+Example: ``select "First Name", Major from Students``
 
 ### Advanced Queries
 Select data using **and**: ``select <fields> from <tablename> where <field1> = <condition1> and <condition2>``\
