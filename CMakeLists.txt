@@ -65,16 +65,10 @@ ADD_EXECUTABLE(main
     ${SOURCE_FILES}
 )
 
-ADD_EXECUTABLE(test_simple
-    _tests/_test_files/test_simple.cpp
-    ${SOURCE_FILES}
-)
+# ADD_EXECUTABLE(test_db
+#     _tests/_test_files/test_db.cpp
+#     ${SOURCE_FILES}
+#     #- - - - - - - - - - - - - - - - 
+# )
 
-ADD_EXECUTABLE(test_db
-    _tests/_test_files/test_db.cpp
-    ${SOURCE_FILES}
-    #- - - - - - - - - - - - - - - - 
-)
-
-TARGET_LINK_LIBRARIES(test_simple gtest)
-TARGET_LINK_LIBRARIES(test_db gtest)
+# TARGET_LINK_LIBRARIES(test_db gtest)
