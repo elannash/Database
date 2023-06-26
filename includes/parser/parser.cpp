@@ -38,7 +38,7 @@ void Parser::set_string(const char *input)
 
         if (token_type != TOKEN_SPACE && str != "\"") // push into the input q if the token isn't a space or quote
             _input_q.push(str);
-        else if (str == "\"")
+        else if (stk.more() && str == "\"")
         {
             str = "";
 
