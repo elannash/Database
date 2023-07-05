@@ -70,7 +70,7 @@ Example: ``select * from Employees where "First Name" = Adam or Age = 34``
 Use **parentheses** to group conditions: ``select <fields> from <tablename> where (<condition1> or <condition2>) and ((<condition3> or <condition4>) or <condition5>)``\
 Example: ``select * from Employees where (Age = 20 or Age = 25) and (("First Name" = John or "Last Name" = Jones) or Age = 21)``
 
-# Sample [Test](https://github.com/elannash/rdbms/blob/86123f15d15c4dcc6b39ab8de3ee614019469dc4/_tests/_test_files/test_db.cpp) Output:
+# Sample [Test](https://github.com/elannash/relational-database/blob/main/_tests/_test_files/test_db.cpp) Output:
 
 <pre>
 ----------running test_db.cpp---------
